@@ -1,0 +1,22 @@
+Ax=b
+r=rank(A)
+A is a m*n matrix
+x is a n*1 vector
+b is a m*1 vector
+(1)when b = 0 ------ homogeneous linear equations 
+	Ax=0
+	基础解系的定义 
+	(1) η1,η2,...,ηt 是 Ax=0 的一组线性无关的解；
+	(2) Ax=0 的任一解都可由 η1,η2,...,ηt 线性表示。
+	如果 η1,η2,...,ηt 为齐次线性方程组 Ax=0 的一组基础解系，那么，Ax=0 的通解可以表示为 x=k1η1+k2η2+...+ktηt，其中 k1,k2,...,kt 是任意常数。
+	
+	定理
+	n 元齐次线性方程组 Am×nx=0 的全体解所构成的集合 S 是一个向量空间，当系数矩阵 A 的秩 rank(Am×n)=r 时，解空间 S 的维数为 n−r 
+
+(2)when b != 0 ------ non-homogeneous linear equations
+	A2=[A b]
+	r2=rank(A2)
+		r<r2  no solution
+		r=r2=n one solution
+		r=r2<n infinite solutions
+	
