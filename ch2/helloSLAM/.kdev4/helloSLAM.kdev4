@@ -1,0 +1,50 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x12\x00h\x00e\x00l\x00l\x00o\x00S\x00L\x00A\x00M)
+
+[CMake]
+Build Directory Count=1
+Current Build Directory Index=0
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///home/reshow/slam_lec/ch2/helloSLAM/build
+Build Type=Debug
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=
+
+[Launch]
+Launch Configurations=Launch Configuration 0,Launch Configuration 1
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=useHello
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\x12\x00h\x00e\x00l\x00l\x00o\x00S\x00L\x00A\x00M\x00\x00\x00\x10\x00u\x00s\x00e\x00H\x00e\x00l\x00l\x00o)
+Dependency Action=Build
+Project Target=helloSLAM,useHello
+
+[Launch][Launch Configuration 1]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=helloSLAM
+Type=Native Application
+
+[Launch][Launch Configuration 1][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=default
+Executable=file:///home/reshow/slam_lec/ch2/helloSLAM/
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=helloSLAM,helloSLAM
+Use External Terminal=false
+Working Directory=
+isExecutable=false
+
+[Project]
+VersionControlSupport=kdevgit
