@@ -25,7 +25,7 @@ int main()
 	v_rotated=rotation_matrix*v;
 	cout<<v_rotated.transpose()<<endl<<endl;
 
-	Eigen::Vector3d euler_angles=rotation_matrix.eulerAngles(2,1,0);//2 1 0 ZYX
+	Eigen::Vector3d euler_angles=rotation_matrix.eulerAngles(2,1,0);//2 1 0 ZYX  此处为弧度表达式
 	cout<<"yaw pitch roll"<<endl<<euler_angles.transpose()<<endl;
 
 	//欧式变换矩阵用Eigen::Isometry
