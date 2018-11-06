@@ -1,0 +1,3 @@
+on the book
+hint:
+		n.transpose().cross(v).dot(n)=0

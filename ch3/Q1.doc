@@ -1,0 +1,13 @@
+单位正交基(i,j,k)
+旋转后变成(a,b,c)
+R=[	ia^T ib ic
+	ja^T jb jc
+	ka^T kb kc]   省略转置符号^T
+
+RX=X'
+X=R^(-1)X'
+故R^(-1)=[	ai bi ci
+			aj bj cj
+			ak bk ck]
+R^(-1)=R^T
+
