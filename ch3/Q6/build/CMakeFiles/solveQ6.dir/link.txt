@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/solveQ6.dir/Q6.cpp.o  -o solveQ6 -rdynamic 
